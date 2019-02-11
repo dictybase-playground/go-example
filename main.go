@@ -63,6 +63,7 @@ func CreateIngress(args sdk.Arguments) error {
 
 func Cleanup(args sdk.Arguments) error {
 	log.Println("Cleanup has been started!")
+	log.Println("Going now for cleanup")
 
 	// lets sleep to simulate that we do something
 	time.Sleep(5 * time.Second)
