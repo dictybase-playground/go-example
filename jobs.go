@@ -38,7 +38,7 @@ var jobs = sdk.Jobs{
 		Handler:     CreateIngress,
 		Title:       "Create K8S Ingress",
 		Description: "Creates a new Kubernetes ingress for the new test environment.",
-		DependsOn:   []string{"Create K8S Namespace"},
+		DependsOn:   []string{"Create K8S Namespace", "Create K8S Service"},
 	},
 	sdk.Job{
 		Handler:     Cleanup,

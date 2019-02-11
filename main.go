@@ -36,6 +36,7 @@ func CreateNamespace(args sdk.Arguments) error {
 
 func CreateDeployment(args sdk.Arguments) error {
 	log.Println("CreateDeployment has been started!")
+	log.Println("It's a polling deployment")
 
 	// lets sleep to simulate that we do something
 	time.Sleep(5 * time.Second)
@@ -44,7 +45,7 @@ func CreateDeployment(args sdk.Arguments) error {
 }
 
 func CreateService(args sdk.Arguments) error {
-	log.Println("CreateService has been started!")
+	log.Println("It's a polling service")
 
 	// lets sleep to simulate that we do something
 	time.Sleep(5 * time.Second)
